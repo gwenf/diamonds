@@ -3,14 +3,15 @@ var alphabet = ['A','B','C','D','E','F','G','H','I','J','K',
 
 function createDiamond(letter){
 	var len = alphabet.indexOf(letter),
-			newLine = '',
-			letterIterate = 0,
-			spacesBeg = len,
-			spacesMiddle = 0;
+		newLine = '',
+		letterIterate = 0,
+		spacesBeg = len,
+		spacesMiddle = 0;
 
 	//test for 'A', if true return
 	if (letter==='A') {
-		return $('#results1').text(letter);
+    document.write('<p><pre>'+letter+'</pre></p>');
+		return ;
 	}
 	
 	//increasing loop
@@ -84,6 +85,13 @@ function createDiamond(letter){
 	}
 }
 
-
+createDiamond('A');
+createDiamond('B');
 createDiamond('C');
-createDiamond('E');
+createDiamond('F');
+createDiamond('I');
+createDiamond('L');
+createDiamond('O');
+createDiamond('R');
+createDiamond('U');
+createDiamond('X');
